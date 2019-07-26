@@ -13,17 +13,17 @@ $serv->set([
  * $reactor_id 线程id
  */
 $serv->on('connect', function ($serv, $fd,$reactor_id) {
-    echo "客户端发来的: {$reactor_id} - {$fd}  Connect.\n";
+    echo "客户端发来的: reactor_id:{$reactor_id} - fd:{$fd}  Connect.\n";
 });
 
 //监听数据接收事件
 $serv->on('receive', function ($serv, $fd, $reactor_id, $data) {
-    $serv->send($fd, "我是服务器发送出去的: {$reactor_id} - {$fd}" . $data);
+    $serv->send($fd, "我是服务器发送出去的: reactor_id:{$reactor_id} - fd:{$fd}data:" . $data);
 });
 
 //监听连接关闭事件
 $serv->on('close', function ($serv, $fd) {
-    echo "结束了，关闭了: Close.\n";
+    echo "结束了，关闭了: Close.{$fd}\n";
 });
 
 //启动服务器
