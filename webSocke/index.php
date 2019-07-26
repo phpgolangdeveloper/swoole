@@ -16,6 +16,14 @@ $ws->set(
     ]
 );
 
+$ws->on('Task', function ($ws, $task_id, $from_id, $data) {
+    echo "Tasker进程接收到数据";
+    echo "#{$ws->worker_id}\tonTask: [PID={$ws->worker_pid}]: task_id=$task_id, data_len=".strlen($data).".".PHP_EOL;
+    $ws->finish($data);
+});
+$ws->on('Finish', function ($ws, $task_id, $data) {
+    echo "Task#$task_id finished, data_len=".strlen($data).PHP_EOL;
+});
 
 //监听WebSocket消息事件
 $ws->on('message', function ($ws, $frame) {
