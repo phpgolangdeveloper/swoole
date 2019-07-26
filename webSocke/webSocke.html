@@ -13,54 +13,31 @@
 
 <script>
 
-    var wsUrl = "ws://127.0.0.1:9502";
+    
 
-    var websocket = new WebSocket(wsUrl);
+    var wsServer = 'ws://127.0.0.1:9502';
+    var websocket = new WebSocket(wsServer);
+    console.log(websocket);
+    websocket.onopen = function (evt) {
+        console.log('evt',evt);
+        console.log("握手成功，可以通讯.");
+    };
 
-    //实例对象的onopen属性
-    websocket.onopen = function(evt) {
-        websocket.send("hello-sinwa");
-        console.log("conected-swoole-success");
-    }
+    websocket.onclose = function (evt) {
+        console.log('evt',evt);
+        console.log("关闭了");
+    };
 
-    // 实例化 onmessage
-    websocket.onmessage = function(evt) {
-        console.log("ws-server-return-data:" + evt.data);
-    }
+    websocket.onmessage = function (evt) {
+        console.log('evt',evt);
+        console.log('服务端发给我的数据: ' + evt.data);
+    };
 
-    //onclose
-    websocket.onclose = function(evt) {
-        console.log("close");
-    }
-    //onerror
-
-    websocket.onerror = function(evt, e) {
-        console.log("error:" + evt.data);
-    }
-    //
-    // var wsServer = 'ws://127.0.0.1:9502';
-    // var websocket = new WebSocket(wsServer);
-    // console.log(websocket);
-    // websocket.onopen = function (evt) {
-    //     console.log('evt',evt);
-    //     console.log("握手成功，可以通讯.");
-    // };
-    //
-    // websocket.onclose = function (evt) {
-    //     console.log('evt',evt);
-    //     console.log("关闭了");
-    // };
-    //
-    // websocket.onmessage = function (evt) {
-    //     console.log('evt',evt);
-    //     console.log('服务端发给我的数据: ' + evt.data);
-    // };
-    //
-    // websocket.onerror = function (evt, e) {
-    //     console.log('evt',evt);
-    //     console.log('e',e);
-    //     console.log('有错误: ' + evt.data);
-    // };
+    websocket.onerror = function (evt, e) {
+        console.log('evt',evt);
+        console.log('e',e);
+        console.log('有错误: ' + evt.data);
+    };
 </script>
 
 </html>
