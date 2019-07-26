@@ -252,10 +252,10 @@
         websocket.onmessage = function (evt) {
             console.log('evt',evt);
             console.log('服务端发给我的数据: ' + evt.data);
-            if (ip != returnCitySN['cip']) {
+            // if (ip != returnCitySN['cip']) {
 
                 $('#words').append('<div class="atalk"><span id="asay">'+ evt.data+'</span></div>');
-            }
+            // }
         };
 
         websocket.onerror = function (evt, e) {
