@@ -20,6 +20,7 @@
     console.log(websocket);
     websocket.onopen = function (evt) {
         console.log('evt',evt);
+        websocket.send('你好啊，我叫童文杰');
         console.log("握手成功，可以通讯.");
     };
 
