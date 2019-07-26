@@ -7,7 +7,7 @@
     <title>简易聊天室</title>
     <style type="text/css">
 
-        @media screen and (min-width: 320px) and (max-width: 1156px){
+        @media screen and (min-width: 320px) and (max-width156px){
             .talk_con_mob{
                 width:600px;
                 height:500px;
@@ -100,7 +100,11 @@
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+
     <script type="text/javascript">
+        var ip;
+        var websocket;
         var Words;
         var TalkWords;
         var TalkSub;
@@ -127,8 +131,11 @@
             // 将之前的内容与要发的内容拼接好 提交
             Words.innerHTML = Words.innerHTML + str;
         }
-
         function toChat2(enterpriseID,platform, query, source,userStatus,username){
+            console.log(enterpriseID);
+            ip = returnCitySN['cip'];
+            websocket.send(query+'.'+ip);
+            console.log('发送');
             var url = "http://10.0.30.15:8092/SmartServer/robot/chat";
             xhr.onreadystatechange = toPostProcess;
             xhr.open("post", url, true);
@@ -142,6 +149,7 @@
                 "username": username
             }));
             console.log("ok");
+
         }
 
         function toPostProcess() {/*设置当获XHR对象获取到返回信息后执行以下代码*/
@@ -150,6 +158,7 @@
                     res = xhr.responseText;
                     var obj = eval ("(" + res + ")");
                     console.log("res ok:" +res);
+
                     try {
                         var textReply = obj.result.content;
                         str = '<div class="atalk"><span>' + textReply +'</span></div>';
@@ -227,11 +236,11 @@
         }
 
         var wsServer = 'ws://39.108.6.204:9502';
-        var websocket = new WebSocket(wsServer);
+        websocket = new WebSocket(wsServer);
         console.log(websocket);
         websocket.onopen = function (evt) {
             console.log('evt',evt);
-            websocket.send('你好啊，我叫童文杰');
+            // websocket.send('你好啊，我叫童文杰');
             console.log("握手成功，可以通讯.");
         };
 
@@ -243,8 +252,10 @@
         websocket.onmessage = function (evt) {
             console.log('evt',evt);
             console.log('服务端发给我的数据: ' + evt.data);
+            if (ip != returnCitySN['cip']) {
 
-            $('#words').append('<div class="atalk"><span id="asay">'+ evt.data+'</span></div>');
+                $('#words').append('<div class="atalk"><span id="asay">'+ evt.data+'</span></div>');
+            }
         };
 
         websocket.onerror = function (evt, e) {
@@ -252,6 +263,7 @@
             console.log('e',e);
             console.log('有错误: ' + evt.data);
         };
+
 
     </script>
 </head>
@@ -265,7 +277,7 @@
     </div>
     <div class="talk_input"  id="talk_input_id">>
         <input type="text" class="talk_word" id="talkwords" onkeypress="InputPress()">
-        <input type="button" value="发送" class="talk_sub" id="talksub" >
+        <input type="button" value="发送" class="talk_sub" id="talksub">
     </div>
 </div>
 </body>

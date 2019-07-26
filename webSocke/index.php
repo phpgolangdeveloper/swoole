@@ -12,7 +12,7 @@ $ws->on('open', function ($ws, $request) {
 //监听WebSocket消息事件
 $ws->on('message', function ($ws, $frame) {
     echo "客户端发来的消息: {$frame->data}\n";
-    $ws->push($frame->fd, "服务端向客户端发的消息: {$frame->data}");
+    $ws->push($frame->fd, "{$frame->data}");
 });
 
 //监听WebSocket连接关闭事件
