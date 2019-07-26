@@ -1,9 +1,3 @@
 <?php
-$client = new swoole_client(SWOOLE_SOCK_TCP);
-if (!$client->connect("0.0.0.0", 9502, -1))
-{
-    exit("connect failed. Error: {$client->errCode}\n");
-}
-$client->send("hello world\n");
-echo $client->recv();
-$client->close();
+$ws = new \swoole_websocket_server("0.0.0.0", 9502);
+$ws->push(1,'iioadasdasdasdasdasd');
