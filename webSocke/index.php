@@ -10,10 +10,10 @@ $ws->on('open', function ($ws, $request) {
     if ($data = json_decode(file_get_contents('./push_data.txt'),true)) {
         $data = array_merge($data,['push_id' => $request->fd,'ip' => $request->server->remote_addr]);
     } else {
-        $data[] = ['push_id' => $request->fd,'ip' => $request->server->remote_addr];
+        $data[] = ['push_id' => $request->fd,'ip' => $request->server['remote_addr']];
     }
     $json_data = json_encode($data,true);
-    file_put_contents('./push_data',$json_data);
+    file_put_contents('./push_data.txt',$json_data,FILE_APPEND);
     $ws->push($request->fd, "你好,客户端已经成功和我握手，现在可以通讯啦\n");
 });
 
