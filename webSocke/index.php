@@ -13,7 +13,7 @@ $ws->on('open', function ($ws, $request) {
         $data[] = ['push_id' => $request->fd,'ip' => $request->server['remote_addr']];
     }
     $json_data = json_encode($data,true);
-    file_put_contents('./push_data.txt',$json_data,FILE_APPEND);
+    file_put_contents('./push_data.txt',$json_data);
     $ws->push($request->fd, "你好,客户端已经成功和我握手，现在可以通讯啦\n");
 });
 
