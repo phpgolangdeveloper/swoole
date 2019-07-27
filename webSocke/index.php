@@ -31,7 +31,6 @@ $ws->on('message', function ($ws, $frame) {
 //监听WebSocket连接关闭事件
 $ws->on('close', function ($ws, $fd) {
     echo "关闭事件-{$fd} is closed\n";
-    unlink('./push_data.txt');
 });
 
 $ws->start();
