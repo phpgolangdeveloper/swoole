@@ -13,6 +13,7 @@ $ws->on('open', function ($ws, $request) {
 $ws->on('message', function ($ws, $frame) {
     echo "客户端发来的消息: {$frame->data}\n";
     var_dump($ws->connections);
+    var_dump($ws->stats);
     $ws->push($frame->fd, "{$frame->data}");
 });
 
