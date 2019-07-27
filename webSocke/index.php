@@ -24,8 +24,6 @@ $ws->on('message', function ($ws, $frame) {
     if ($data_array = json_decode($data,true)) {
         foreach ($data_array as $fd) {
             $ws->push($fd['push_id'], "{$frame->data}");
-            file_put_contents('./push_data_beifen.txt',$data);
-            unlink('./push_data.txt');
         }
     }
 });
