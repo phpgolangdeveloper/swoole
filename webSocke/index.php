@@ -20,7 +20,7 @@ $ws->on('open', function ($ws, $request) {
 //监听WebSocket消息事件
 $ws->on('message', function ($ws, $frame) {
     echo "客户端发来的消息: {$frame->data}\n";
-    $data = file_get_contents('./push_data');
+    $data = file_get_contents('./push_data.txt');
     foreach ($data as $fd) {
         $ws->push($fd['push_id'], "{$frame->data}");
     }
