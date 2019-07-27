@@ -22,9 +22,10 @@ $ws->on('message', function ($ws, $frame) {
     echo "客户端发来的消息: {$frame->data}\n";
     $data = file_get_contents('./push_data.txt');
     if ($data_array = json_decode($data,true)) {
-
         foreach ($data_array as $fd) {
             $ws->push($fd['push_id'], "{$frame->data}");
+            file_put_contents('./push_data_beifen.txt',$data);
+            unlink('./push_data.txt');
         }
     }
 });
@@ -32,6 +33,7 @@ $ws->on('message', function ($ws, $frame) {
 //监听WebSocket连接关闭事件
 $ws->on('close', function ($ws, $fd) {
     echo "关闭事件-{$fd} is closed\n";
+    unlink('./push_data.txt');
 });
 
 $ws->start();
