@@ -23,7 +23,7 @@ $ws->on('message', function ($ws, $frame) {
     $data = file_get_contents('./push_data.txt');
     if ($data_array = json_decode($data,true)) {
         foreach ($data_array as $fd) {
-            $ws->push($fd['push_id'], "{$fd['ip']},{$frame->data}");
+            $ws->push($fd['push_id'], "{$frame->data}");
         }
     }
 });
