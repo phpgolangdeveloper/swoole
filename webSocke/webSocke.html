@@ -134,7 +134,7 @@
         function toChat2(enterpriseID,platform, query, source,userStatus,username){
             console.log(enterpriseID);
             ip = returnCitySN['cip'];
-            websocket.send(query+'.'+ip);
+            websocket.send(query);
             console.log('发送');
             var url = "http://10.0.30.15:8092/SmartServer/robot/chat";
             xhr.onreadystatechange = toPostProcess;
