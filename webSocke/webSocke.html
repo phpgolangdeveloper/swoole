@@ -134,7 +134,7 @@
         function toChat2(enterpriseID,platform, query, source,userStatus,username){
             console.log(enterpriseID);
             ip = returnCitySN['cip'];
-            websocket.send(ip+','+query);
+            websocket.send(query);
             console.log('发送');
             var url = "http://10.0.30.15:8092/SmartServer/robot/chat";
             xhr.onreadystatechange = toPostProcess;
@@ -255,7 +255,7 @@
 
             var splitArray = evt.data.split(',');
             console.log(splitArray);
-            if (splitArray[0] != returnCitySN['cip']) {
+            if (splitArray[0] != ip) {
 
                 $('#words').append('<div class="atalk"><span id="asay">'+ splitArray[1]+'</span></div>');
             }
