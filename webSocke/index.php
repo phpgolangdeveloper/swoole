@@ -26,8 +26,9 @@ $ws->on('open', function ($ws, $request) {
 });
 
 
-$ws->on('Task', function ($ws, Swoole\Server\Task $task) {
-    file_put_contents('./var_dump.txt',json_encode($task,true));
+$ws->on('task', function ($ws, Swoole\Server\Task $task) {
+    file_put_contents('./var_dump1.txt','task进程来了');
+    file_put_contents('./var_dump2.txt',json_encode($task,true));
 });
 
 
