@@ -1,5 +1,13 @@
 <?php
 
+//$dbh = new PDO('mysql:host=39.108.6.204;dbname=super_twj', 'tongwenjie', 'huazhen1234');
+//
+//$sql = 'select * from wj_users';
+//$stmt = $dbh->query($sql);
+//$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//
+//var_dump($dbh,$data);exit;
+
 //创建websocket服务器对象，监听0.0.0.0:9502端口
 $ws = new \swoole_websocket_server("0.0.0.0", 9502);
 
@@ -16,6 +24,12 @@ $ws->on('open', function ($ws, $request) {
     file_put_contents('./push_data.txt',$json_data);
     $ws->push($request->fd, "你好,客户端已经成功和我握手，现在可以通讯啦\n");
 });
+
+
+$ws->on('Task', function ($ws, Swoole\Server\Task $task) {
+    file_put_contents('./var_dump.txt',json_encode($task,true));
+});
+
 
 //监听WebSocket消息事件
 $ws->on('message', function ($ws, $frame) {
