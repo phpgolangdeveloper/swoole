@@ -15,7 +15,8 @@ $ws = new \swoole_websocket_server("0.0.0.0", 9502);
 $ws->on('open', function ($ws, $request) {
     var_dump($request->fd, $request->get, $request->server);
 
-    if ($data = json_decode(file_get_contents('./push_data.txt'),true)) {
+    if (file_exists('./push_data.txt')) {
+        $data = json_decode(file_get_contents('./push_data.txt'),true);
         $data = array_merge($data,[['push_id' => $request->fd,'ip' => $request->server['remote_addr']]]);
     } else {
         $data[] = ['push_id' => $request->fd,'ip' => $request->server['remote_addr']];
