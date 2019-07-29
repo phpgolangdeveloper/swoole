@@ -25,18 +25,6 @@ $ws->on('open', function ($ws, $request) {
     $ws->push($request->fd, "你好,客户端已经成功和我握手，现在可以通讯啦\n");
 });
 
-try {
-    $ws->on('task', function ($ws, Swoole\Server\Task $task) {
-        file_put_contents('./var_dump1.txt','task进程来了');
-        file_put_contents('./var_dump2.txt',json_encode($task,true));
-    });
-} catch (Exception $e) {
-    var_dump($e->getMessage());
-}
-
-$ws->on('onFinish',function($ws,$taskId,$data) {
-   echo "taskId:{$taskId}";
-});
 
 
 //监听WebSocket消息事件
