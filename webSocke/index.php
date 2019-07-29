@@ -34,6 +34,10 @@ try {
     var_dump($e->getMessage());
 }
 
+$ws->on('onFinish',function($ws,$taskId,$data) {
+   echo "taskId:{$taskId}";
+});
+
 
 //监听WebSocket消息事件
 $ws->on('message', function ($ws, $frame) {
