@@ -4,6 +4,15 @@
 // 监听0.0.0.0 表示监听所有地址
 $http = new swoole_http_server('0.0.0.0', 8811);
 
+
+$http->set(
+    [
+        'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
+        'document_root' => '/home/wwwroot/default/twj/swoole/data',//设置静态处理器的路径。类型为数组，默认不启用
+    ]
+);
+
+
 // $request 请求
 // $response 响应
 $http->on('request', function ($request, $response) {
@@ -12,9 +21,9 @@ $http->on('request', function ($request, $response) {
 
     // 设置cookie
     $response->cookie('singwa', '值', time() + 1800);
-    var_dump($_COOKIE);
-    var_dump($request->header);
+
     // 如果要把数据放在浏览器，就要用end()这个方法,而且必须要是string
     $response->end("<h1>HTTPserver</h1>");
+
 });
 $http->start();
