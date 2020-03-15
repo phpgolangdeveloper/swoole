@@ -2,7 +2,7 @@
 // 连接 swoole tcp 服务
 $client = new swoole_client(SWOOLE_SOCK_TCP);
 
-if (!$clent->connect("127.0.0.1", 9501)) {
+if (!$client->connect("127.0.0.1", 9501)) {
     echo "连接失败";
     exit;
 }

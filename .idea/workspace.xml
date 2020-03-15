@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/tcp_client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/tcp_client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="96">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -36,7 +32,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>send</find>
       <find>$serv</find>
       <find>onHandShake</find>
       <find>response</find>
@@ -66,6 +61,7 @@
       <find>reactor_id</find>
       <find>$reactor_id</find>
       <find>SWOOLE_SOCK_TCP</find>
+      <find>$clent</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -104,6 +100,11 @@
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swoole" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,12 +146,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557761663005</updated>
       <workItem from="1557761664277" duration="969000" />
-      <workItem from="1584264066521" duration="1811000" />
+      <workItem from="1584264066521" duration="1995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20179000" />
+    <option name="totallyTimeSpent" value="20363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="732" y="86" width="1399" height="725" extended-state="0" />
@@ -259,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/tcp_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="96">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
