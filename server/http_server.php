@@ -13,7 +13,7 @@ $http->on('request', function ($request, $response) {
     // 设置cookie
     $response->cookie('singwa', '值', time() + 1800);
     var_dump($_COOKIE);
-    var_dump($request->header());
+    var_dump($request->header);
     // 如果要把数据放在浏览器，就要用end()这个方法,而且必须要是string
     $response->end("<h1>HTTPserver</h1>");
 });
