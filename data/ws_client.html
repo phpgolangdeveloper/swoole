@@ -10,11 +10,8 @@
 <body>
 <h1>我是ws测试</h1>
 <script>
-
     var wsUrl = 'ws://39.108.6.204:8812';
-
     var websocket = new WebSocket(wsUrl);
-
     // 实例对象的 onopen属性
     websocket.onopen = function (evt) {
         websocket.send('hello=sinwa');
