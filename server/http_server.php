@@ -4,13 +4,13 @@
 // 监听0.0.0.0 表示监听所有地址
 $http = new swoole_http_server('0.0.0.0', 8811);
 
-
 $http->set(
     [
         'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
         'document_root' => '/home/wwwroot/default/twj/swoole/data',//设置静态处理器的路径。类型为数组，默认不启用
     ]
 );
+// 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
 
 
 // $request 请求
