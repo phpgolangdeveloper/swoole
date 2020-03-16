@@ -11,27 +11,27 @@
 <h1>我是ws测试</h1>
 <script>
     console.log('来了');
-    //
-    // var wsUrl = 'ws://39.108.6.204:8810';
-    //
-    // var websocket = new WebSocket(wsUrl);
-    //
-    // // 实例对象的 onopen属性
-    // websocket.onopen = function (evt) {
-    //     console.log('ws握手成功');
-    // }
-    // // 实例化 onmessage
-    // websocket.onmessage = function (evt) {
-    //     console.log('wsdata:' + evt.data);
-    // }
-    // // 关闭
-    // websocket.onclose = function (evt) {
-    //     console.log('关闭');
-    // }
-    //
-    // websocket.onerror = function (evt, e) {
-    //     console.log('error:' + e.data);
-    // }
+
+    var wsUrl = 'ws://39.108.6.204:8810';
+
+    var websocket = new WebSocket(wsUrl);
+
+    // 实例对象的 onopen属性
+    websocket.onopen = function (evt) {
+        console.log('ws握手成功');
+    }
+    // 实例化 onmessage
+    websocket.onmessage = function (evt) {
+        console.log('wsdata:' + evt.data);
+    }
+    // 关闭
+    websocket.onclose = function (evt) {
+        console.log('关闭');
+    }
+
+    websocket.onerror = function (evt, e) {
+        console.log('error:' + e.data);
+    }
 
 </script>
 </body>
