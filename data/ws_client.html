@@ -10,7 +10,6 @@
 <body>
 <h1>我是ws测试</h1>
 <script>
-    console.log('来了');
 
     var wsUrl = 'ws://39.108.6.204:8812';
 
@@ -18,16 +17,16 @@
 
     // 实例对象的 onopen属性
     websocket.onopen = function (evt) {
-        websocket.send('hello');
-        console.log('ws握手成功');
+        websocket.send('hello=sinwa');
+        console.log('coneccted-swoole-success');
     }
     // 实例化 onmessage
     websocket.onmessage = function (evt) {
-        console.log('wsdata:' + evt.data);
+        console.log('ws-server-return-data:' + evt.data);
     }
     // 关闭
     websocket.onclose = function (evt) {
-        console.log('关闭');
+        console.log('closw');
     }
 
     websocket.onerror = function (evt, e) {
