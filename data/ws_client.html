@@ -23,6 +23,7 @@
     // 实例化 onmessage
     websocket.onmessage = function (evt) {
         console.log('wsdata:' + evt.data);
+        websocket.send('连接成功');
     }
     // 关闭
     websocket.onclose = function (evt) {
