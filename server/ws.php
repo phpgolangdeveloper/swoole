@@ -11,6 +11,12 @@ class Ws
     public function __construct()
     {
         $this->ws = new Swoole\WebSocket\Server("0.0.0.0", 8812);
+        $this->ws->set(
+            [
+                'worker_num' => 2,
+                'task_worker_num' => 2,
+            ]
+        );
         $this->ws->on('open', [$this, 'onOpen']);
         $this->ws->on('message', [$this, 'onMessage']);
         $this->ws->on('task', [$this, 'onTask']);
