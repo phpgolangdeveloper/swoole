@@ -18,12 +18,12 @@
 
     // 实例对象的 onopen属性
     websocket.onopen = function (evt) {
+        websocket.send('hello');
         console.log('ws握手成功');
     }
     // 实例化 onmessage
     websocket.onmessage = function (evt) {
         console.log('wsdata:' + evt.data);
-        websocket.send('连接成功');
     }
     // 关闭
     websocket.onclose = function (evt) {
