@@ -4,7 +4,7 @@ $server = new Swoole\WebSocket\Server("0.0.0.0", 8810);
 
 // 监听websocket连接打开事件
 $server->on('open','onOpen');
-function onOpen($server,$server, $request) {
+function onOpen($server, $request) {
     print_r($request->fd);// 来自那个客户端的请求
 };
 
