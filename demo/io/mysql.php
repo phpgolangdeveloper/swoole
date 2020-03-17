@@ -32,6 +32,7 @@ class AysMysql
 
     public function aa()
     {
+        echo 1;
         sleep(10);
     }
 
