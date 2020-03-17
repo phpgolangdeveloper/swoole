@@ -13,8 +13,9 @@ for ($i = 0; $i < 6; $i++) {
 
     // 子进程
     $process = new swoole_process(function (swoole_process $worker) use ($i, $urls) {
-        curlData($urls[$i]);
-    }, true);
+        $content = curlData($urls[$i]);
+        echo $content . PHP_EOL;
+    }, false);
     $pid = $process->start();
     $workers[$pid] = $process;
 }
