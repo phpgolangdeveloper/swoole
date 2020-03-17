@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/io/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/io/read.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/ws.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +23,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/ws.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="864">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/io/read.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/io/1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -97,13 +116,16 @@
         <option value="$PROJECT_DIR$/server/ws.server.php" />
         <option value="$PROJECT_DIR$/data/ws_client.html" />
         <option value="$PROJECT_DIR$/server/ws.php" />
+        <option value="$PROJECT_DIR$/demo/io/1.txt" />
+        <option value="$PROJECT_DIR$/demo/io/read.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="695" />
+    <option name="x" value="750" />
+    <option name="y" value="142" />
     <option name="width" value="1449" />
-    <option name="height" value="1038" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -120,12 +142,13 @@
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,15 +195,15 @@
       <workItem from="1557761664277" duration="969000" />
       <workItem from="1584264066521" duration="14701000" />
       <workItem from="1584324686572" duration="16113000" />
-      <workItem from="1584416116695" duration="1690000" />
+      <workItem from="1584416116695" duration="5706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50872000" />
+    <option name="totallyTimeSpent" value="54888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="626" y="0" width="1159" height="830" extended-state="0" />
+    <frame x="600" y="114" width="1159" height="755" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11989101" />
@@ -332,8 +355,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/ws.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state relative-caret-position="864">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/io/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/io/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
