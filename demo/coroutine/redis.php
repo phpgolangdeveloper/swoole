@@ -1,6 +1,14 @@
 <?php
 
+$http = new swoole_http_server('0.0.0.0', 8813);
+$http->on('request', function($request, $response) {
 
-$redis = new new Swoole\Coroutine\Redis();
-$redis->connect('127.0.0.', 6379);
-$redis->get('swoole');
+    // 获取redis里面的key内容。然后输出浏览器
+    $redis = new Swoole\Coroutine\Redis();
+    $redis->connect('127.0.0.1', 6379);
+    $val = $redis->get($request->get['a']);
+    $response->end($val);
+});
+
+
+$http->start();
