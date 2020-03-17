@@ -49,7 +49,7 @@ $server->set([
 ]);
 
 $server->on("request", function ($request, $response) {
-    if ($request->server['request_uri'] == '/coro') {
+    if (1) {
         go(function () use ($response) {
             co::sleep(0.2);
             $response->header("Content-Type", "text/plain");
