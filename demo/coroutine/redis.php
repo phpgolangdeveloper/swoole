@@ -1,7 +1,7 @@
 <?php
 
 $http = new swoole_http_server('0.0.0.0', 8813);
-$http->on('request', function($request, $response) {
+$http->on('request', function ($request, $response) {
 
     // 获取redis里面的key内容。然后输出浏览器
     $redis = new Swoole\Coroutine\Redis();
