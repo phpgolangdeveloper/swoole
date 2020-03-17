@@ -29,4 +29,4 @@ class AysMysql
 
 }
 
-new mysqli();
+new AysMysql();
