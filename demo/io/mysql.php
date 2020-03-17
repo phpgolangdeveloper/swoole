@@ -28,5 +28,5 @@ class AysMysql
     }
 
 }
-
+ 
 new AysMysql();
