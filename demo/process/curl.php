@@ -1,4 +1,7 @@
 <?php
+
+echo "process-start-time:" . date('Y-M-D H:i:s');
+
 $workers = [];
 $urls = [
     'http://baidu.com',
@@ -32,3 +35,4 @@ function curlData($url)
     sleep(1);
     return $url . 'success' . PHP_EOL;
 }
+echo "process-end-time:" . date('Y-M-D H:i:s');
