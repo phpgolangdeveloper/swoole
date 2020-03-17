@@ -14,10 +14,17 @@ $table->column('name', $table::TYPE_STRING, 64);
 $table->column('age', $table::TYPE_INT, 3);
 $table->create();
 
-// 增加一行记录
+// 一种方案 增加一行记录
 $table->set('lalala',
     ['id' => 1, 'name' => 'twj', 'age' => 18]
 );
 
-$a = $table->get('lalala');// 去获取我们之前设置的数据
+// 另一种方案 增加一行记录
+$table['lalala2'] = [
+    'id' => 2,
+    'name' => 'hhh',
+    'age' => 3,
+];
+
+$a = $table->get($table['lalala2']);// 去获取我们之前设置的数据
 print_r($a);
