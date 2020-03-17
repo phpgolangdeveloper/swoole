@@ -1,5 +1,8 @@
 <?php
 
+/***
+ * 使用场景：在一些数据共享的时候，特别是多进程时候，可以用这个方式去做内存共享
+ */
 
 // 创建内存表
 $table = new swoole_table(1024);
@@ -16,5 +19,5 @@ $table->set('lalala',
     ['id' => 1, 'name' => 'twj', 'age' => 18]
 );
 
-$a = $table->get('lalala');
+$a = $table->get('lalala');// 去获取我们之前设置的数据
 print_r($a);
