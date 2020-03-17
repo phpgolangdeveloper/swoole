@@ -25,6 +25,5 @@ $table['lalala2'] = [
     'name' => 'hhh',
     'age' => 3,
 ];
-
-$a = $table->get($table['lalala2']);// 去获取我们之前设置的数据
+$a = $table->get('lalala2');// 去获取我们之前设置的数据
 print_r($a);
