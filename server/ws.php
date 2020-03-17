@@ -12,9 +12,11 @@ class Ws
     {
         $this->ws = new Swoole\WebSocket\Server("0.0.0.0", 8812);
         $this->ws->set(
+            // task_worker_num 配置 Task 进程的数量。【默认值：未配置则不启动 task】
+            // worker_num 设置启动的 Worker 进程数。【默认值：CPU 核数】
             [
                 'worker_num' => 2,
-                'task_worker_num' => 2,
+                'task_worker_num' => 2,// 配置此参数后将会启用 task 功能。所以 Server 务必要注册 onTask、onFinish 2 个事件回调函数。如果没有注册，服务器程序将无法启动。
             ]
         );
         $this->ws->on('open', [$this, 'onOpen']);
@@ -25,9 +27,20 @@ class Ws
         $this->ws->start();
     }
 
+    /***
+     * 握手
+     * @param $ws
+     * @param $request
+     */
     public function onOpen($ws, $request)
     {
         var_dump($request->fd . "\n");
+        if ($request->fd == 1) {
+            // 每2秒执行
+            swoole_timer_tick(2000, function ($timer_id) {
+                echo "2s:timerId:{$timer_id} \n";
+            });
+        }
     }
 
     public function onMessage($ws, $frame)
@@ -39,7 +52,13 @@ class Ws
             'fd' => $frame->fd,
 
         ];
-        $ws->task($data);
+//        $ws->task($data);// 投递异步耗时任务
+
+        swoole_timer_after(5000, function() use($ws, $frame) {
+            echo "5s-after\n";
+            $ws->push($frame->fd, 'server-time-after:' . date('Y-M-D H:i:s') . "\n");
+        });
+
         $ws->push($frame->fd, 'server-push:' . date('Y-M-D H:i:s') . "\n");
     }
 
