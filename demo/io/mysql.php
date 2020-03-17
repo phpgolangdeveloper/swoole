@@ -53,11 +53,11 @@ $server->on("request", function ($request, $response) {
         go(function () use ($response) {
             co::sleep(0.2);
             $response->header("Content-Type", "text/plain");
-            $response->end("Hello World\n");
+            $response->end("Hello World1\n");
         });
     } else {
         $response->header("Content-Type", "text/plain");
-        $response->end("Hello World\n");
+        $response->end("Hello World2\n");
     }
 });
 
