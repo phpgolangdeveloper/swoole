@@ -17,7 +17,20 @@ $http->set(
 // $response 响应
 $http->on('request', function ($request, $response) {
 //    var_dump($_GET);// 是获取不到的，要通过$request获取
-    var_dump($request->get);// 只能在服务器看到，浏览器是看不到的
+//    var_dump($request->get);// 只能在服务器看到，浏览器是看不到的
+
+    $content = [
+        'get' => $request->get,
+        'post' => $request->post,
+        'header' => $request->header,
+        'date:' => date('Y-M-D H:i:s'),
+    ];
+    $filename = './access.log';
+    go(function () use ($filename, $content) {
+        $bool = Swoole\Coroutine\System::writeFile($filename, json_encode($content ), FILE_APPEND);
+        var_dump($bool);
+    });
+
 
     // 设置cookie
     $response->cookie('singwa', '值', time() + 1800);
