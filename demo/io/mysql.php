@@ -20,13 +20,20 @@ class AysMysql
         $http = new swoole_http_server('0.0.0.0', 8811);
         $http->set(['enable_coroutine' => true]);
         $http->on('request', function ($request, $response) {
+            $this->aa();
 
-            var_dump(10);
+            $response->end("hahaha");
         });
         var_dump(123);
         $http->start();
     }
 
+    public function aa()
+    {
+        sleep(10);
+    }
+
 }
- 
+
+
 new AysMysql();
