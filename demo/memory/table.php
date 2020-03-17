@@ -26,4 +26,7 @@ $table['lalala2'] = [
     'age' => 3,
 ];
 $a = $table->get('lalala2');// 去获取我们之前设置的数据
-print_r($a);
+
+// 对某一个值进行加减操作
+$table->incr('lalala2', 'age', 2);
+print_r($table['lalala2']);
