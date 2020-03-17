@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo/memory/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/memory/table.php" afterDir="false" />
-    </list>
+    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,9 @@
         <entry file="file://$PROJECT_DIR$/demo/memory/table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -170,12 +170,12 @@
       <workItem from="1557761664277" duration="969000" />
       <workItem from="1584264066521" duration="14701000" />
       <workItem from="1584324686572" duration="16113000" />
-      <workItem from="1584416116695" duration="22689000" />
+      <workItem from="1584416116695" duration="22723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71871000" />
+    <option name="totallyTimeSpent" value="71905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="602" y="63" width="1159" height="775" extended-state="0" />
@@ -387,7 +387,9 @@
     <entry file="file://$PROJECT_DIR$/demo/memory/table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
