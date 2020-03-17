@@ -7,7 +7,6 @@
 // 创建内存表
 $table = new swoole_table(1024);
 
-
 // 内存表增加一列
 $table->column('id', $table::TYPE_INT, 4);
 $table->column('name', $table::TYPE_STRING, 64);
@@ -28,5 +27,10 @@ $table['lalala2'] = [
 $a = $table->get('lalala2');// 去获取我们之前设置的数据
 
 // 对某一个值进行加减操作
-$table->incr('lalala2', 'age', 2);
+$table->incr('lalala2', 'age', 2);// 加
+$table->decr('lalala2', 'age', 2);// 减
 print_r($table['lalala2']);
+echo 'del';
+$table->del('lalala2');// 删除某个key
+print_r($table['lalala2']);
+// 当我们这个进程执行完，数据是会释放的，这个要注意
