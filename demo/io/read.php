@@ -5,13 +5,14 @@
  * __DIR__
  */
 // $filename = __DIR__.'/1.txt'
-$result = Swoole\Async::readfile(__DIR__.'/1.txt',function($filename,$fileContent) {
-    // 后执行
-    echo "filename:".$filename.PHP_EOL; // PHP 中换行可以用 PHP_EOL 来替代，以提高代码的源代码级可移植性：
-    echo "content:".$fileContent.PHP_EOL; // PHP 中换行可以用 PHP_EOL 来替代，以提高代码的源代码级可移植性：
+$fileName = __DIR__.'/1.txt';
+go(function() use ($fileName) {
+    $result = Swoole\Coroutine\System::readFile($fileName);
+    var_dump($result);
+    echo "<hr />";
 });
+
 // 先执行
-var_dump($result); // bool
 echo "start".PHP_EOL;
 
 // 异步读取文件
