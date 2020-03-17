@@ -18,7 +18,7 @@ class AysMysql
 //        ];
         Co::set(['hook_flags' => SWOOLE_HOOK_TCP]);
         $http = new swoole_http_server('0.0.0.0', 8811);
-        $http->set(['enable_coroutine' => true]);
+        $http->set(['enable_coroutine' => false]);
         $http->on('request', function ($request, $response) {
             go(function(){
                 $this->aa();
