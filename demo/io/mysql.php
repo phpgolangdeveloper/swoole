@@ -52,6 +52,7 @@ $server->on("request", function ($request, $response) {
     if (1) {
         go(function () use ($response) {
             co::sleep(0.2);
+            a();
             $response->header("Content-Type", "text/plain");
             $response->end("Hello World1\n");
         });
@@ -60,5 +61,9 @@ $server->on("request", function ($request, $response) {
         $response->end("Hello World2\n");
     }
 });
+
+function a() {
+    sleep(10);
+}
 
 $server->start();
