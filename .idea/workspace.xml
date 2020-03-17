@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/memory/table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/memory/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/demo/memory/table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/memory/table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -171,12 +170,12 @@
       <workItem from="1557761664277" duration="969000" />
       <workItem from="1584264066521" duration="14701000" />
       <workItem from="1584324686572" duration="16113000" />
-      <workItem from="1584416116695" duration="22633000" />
+      <workItem from="1584416116695" duration="22689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71815000" />
+    <option name="totallyTimeSpent" value="71871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="602" y="63" width="1159" height="775" extended-state="0" />
@@ -387,8 +386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/memory/table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
