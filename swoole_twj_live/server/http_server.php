@@ -52,7 +52,7 @@ $http->on('request', function ($request, $response) {
     } catch(\Exception $e) {
 
     }
-    $res = ob_get_contents();
+    $res = ob_end_flush();
     ob_end_clean();
     $response->end($res);
 
