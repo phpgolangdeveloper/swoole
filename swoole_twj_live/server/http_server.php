@@ -8,15 +8,22 @@ $http->set(
     [
         'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
         'document_root' => '/home/wwwroot/default/twj/swoole/swoole_twj_live/public/static',//设置静态处理器的路径。类型为数组，默认不启用
+        'worker_num' => 5,
     ]
 );
+
+$this->on('WorkerStart', function(swoole_server $server, $worker_id ) {
+
+    define('APP_PATH',__DIR__.'/../application');
+    require __DIR__.'/base.php';
+});
+
 // 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
 $http->on('request', function ($request, $response) {
 
-    // 设置cookie
-    $response->cookie('singwa', '值', time() + 1800);
 
-    // 如果要把数据放在浏览器，就要用end()这个方法,而且必须要是string
+
+    $response->cookie('singwa', '值', time() + 1800);
     $response->end("<h1>HTTPserver</h1>");
 
 });
