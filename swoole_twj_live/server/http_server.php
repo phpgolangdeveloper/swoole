@@ -45,13 +45,16 @@ $http->on('request', function ($request, $response) {
             $_POST[strtoupper($k)] = $v;
         }
     }
+    ob_start();
     try {
         \think\Container::get('app', [APP_PATH])
             ->run()->send();
     } catch(\Exception $e) {
 
     }
-    $response->end(123);
+    $res = ob_get_contents();
+    ob_end_clean();
+    $response->end($res);
 
 });
 $http->start();
