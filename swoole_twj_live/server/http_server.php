@@ -19,7 +19,7 @@ $http->on('WorkerStart', function (swoole_server $server, $worker_id) {
 });
 
 // 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
-$http->on('request', function ($request, $response) {
+$http->on('request', function ($request, $response) use ($http) {
 
     if (isset($request->server)) {
         foreach ($request->server as $k => $v) {
@@ -31,9 +31,7 @@ $http->on('request', function ($request, $response) {
             $_SERVER[strtoupper($k)] = $v;
         }
     }
-    if (!empty($_GET)) {
-        unset($_GET);
-    }
+
     if (isset($request->get)) {
         foreach ($request->get as $k => $v) {
             $_GET[strtoupper($k)] = $v;
@@ -45,13 +43,19 @@ $http->on('request', function ($request, $response) {
             $_POST[strtoupper($k)] = $v;
         }
     }
+    ob_start();
     try {
-        $res = \think\Container::get('app', [APP_PATH])
+        \think\Container::get('app', [APP_PATH])
             ->run()->send();
-    } catch(\Exception $e) {
+    } catch (\Exception $e) {
 
     }
+    $res = ob_get_contents();
+    echo $request()->action() . PHP_EOL;
+    ob_end_clean();
     $response->end($res);
+
+    $http->close();
 
 });
 $http->start();
