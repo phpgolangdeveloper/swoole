@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swoole_twj_live/public/static/live/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="264">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -126,8 +123,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="762" />
-    <option name="y" value="145" />
+    <option name="x" value="877" />
+    <option name="y" value="60" />
     <option name="width" value="1240" />
     <option name="height" value="1039" />
   </component>
@@ -229,15 +226,15 @@
       <workItem from="1584467715548" duration="66000" />
       <workItem from="1584503682411" duration="2643000" />
       <workItem from="1584621106218" duration="110000" />
-      <workItem from="1584621422898" duration="4117000" />
+      <workItem from="1584621422898" duration="4367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81820000" />
+    <option name="totallyTimeSpent" value="82070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="602" y="30" width="992" height="831" extended-state="0" />
+    <frame x="702" y="48" width="992" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18629551" />
@@ -493,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="264">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
