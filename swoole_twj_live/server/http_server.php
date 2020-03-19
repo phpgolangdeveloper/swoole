@@ -15,7 +15,7 @@ $http->set(
 $this->on('WorkerStart', function(swoole_server $server, $worker_id ) {
 
     define('APP_PATH',__DIR__.'/../application');
-    require __DIR__.'/base.php';
+    require __DIR__.'/../thinkphp/base.php';
 });
 
 // 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
