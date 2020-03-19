@@ -5,6 +5,7 @@ class Index
 {
     public function index()
     {
+        print_r($_GET);
         echo 123;
     }
 

@@ -31,7 +31,9 @@ $http->on('request', function ($request, $response) {
             $_SERVER[strtoupper($k)] = $v;
         }
     }
-
+    if (!empty($_GET)) {
+        unset($_GET);
+    }
     if (isset($request->get)) {
         foreach ($request->get as $k => $v) {
             $_GET[strtoupper($k)] = $v;
@@ -44,11 +46,16 @@ $http->on('request', function ($request, $response) {
         }
     }
     ob_start();
-    \think\Container::get('app', [APP_PATH])
-        ->run()->send();
+    echo '缓冲区';
+    try {
+        \think\Container::get('app', [APP_PATH])
+            ->run()->send();
+    } catch(\Exception $e) {
+
+    }
     $res = ob_get_contents();
+    var_dump($res);
     ob_end_clean();
-    $response->cookie('singwa', '值', time() + 1800);
     $response->end($res);
 
 });
