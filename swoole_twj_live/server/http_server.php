@@ -51,7 +51,6 @@ $http->on('request', function ($request, $response) use ($http) {
 
     }
     $res = ob_get_contents();
-    echo $request()->action() . PHP_EOL;
     ob_end_clean();
     $response->end($res);
 
