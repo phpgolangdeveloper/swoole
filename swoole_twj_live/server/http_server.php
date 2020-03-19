@@ -53,8 +53,8 @@ $http->on('request', function ($request, $response) {
 
     }
     $res = ob_get_contents();
-    $response->end($res);
     ob_end_clean();
+    $response->end($res);
 
 });
 $http->start();
