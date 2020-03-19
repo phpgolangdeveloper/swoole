@@ -20,7 +20,7 @@ $http->on('WorkerStart', function (swoole_server $server, $worker_id) {
 
 // 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
 $http->on('request', function ($request, $response) use ($http) {
-
+    header('Content-Type: text/html; charset=utf-8'); //网页编码
     if (isset($request->server)) {
         foreach ($request->server as $k => $v) {
             $_SERVER[strtoupper($k)] = $v;
