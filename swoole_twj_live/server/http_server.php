@@ -46,7 +46,7 @@ $http->on('request', function ($request, $response) {
         }
     }
     ob_start();
-    echo '缓冲区';
+    echo 123;
     try {
         \think\Container::get('app', [APP_PATH])
             ->run()->send();
@@ -54,7 +54,6 @@ $http->on('request', function ($request, $response) {
 
     }
     $res = ob_get_contents();
-    var_dump($res);
     ob_end_clean();
     $response->end($res);
 
