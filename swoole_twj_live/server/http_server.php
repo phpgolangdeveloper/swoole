@@ -44,8 +44,8 @@ $http->on('request', function ($request, $response) {
         }
     }
 
-//    \think\Container::get('app', [APP_PATH])
-//        ->run()->send();
+    \think\Container::get('app', [APP_PATH])
+        ->run()->send();
 
     $response->cookie('singwa', '值', time() + 1800);
     $response->end("<h1>HTTPserver</h1>");
