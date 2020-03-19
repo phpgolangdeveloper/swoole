@@ -43,12 +43,12 @@ $http->on('request', function ($request, $response) {
             $_POST[strtoupper($k)] = $v;
         }
     }
-
+    ob_start();
     \think\Container::get('app', [APP_PATH])
         ->run()->send();
-
+    $res = ob_get_contents();
     $response->cookie('singwa', '值', time() + 1800);
-    $response->end("<h1>HTTPserver</h1>");
+    $response->end($res);
 
 });
 $http->start();
