@@ -46,7 +46,6 @@ $http->on('request', function ($request, $response) {
         }
     }
     ob_start();
-    echo 123;
     try {
         \think\Container::get('app', [APP_PATH])
             ->run()->send();
@@ -54,8 +53,8 @@ $http->on('request', function ($request, $response) {
 
     }
     $res = ob_get_contents();
-    ob_end_clean();
     $response->end($res);
+    ob_end_clean();
 
 });
 $http->start();
