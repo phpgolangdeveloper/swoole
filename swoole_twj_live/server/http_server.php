@@ -22,24 +22,24 @@ $http->on('WorkerStart', function (swoole_server $server, $worker_id) {
 $http->on('request', function ($request, $response) {
 
     if (isset($request->server)) {
-        foreach ($response->server as $k => $v) {
+        foreach ($request->server as $k => $v) {
             $_SERVER[strtoupper($k)] = $v;
         }
     }
     if (isset($request->header)) {
-        foreach ($response->header as $k => $v) {
+        foreach ($request->header as $k => $v) {
             $_SERVER[strtoupper($k)] = $v;
         }
     }
 
     if (isset($request->get)) {
-        foreach ($response->get as $k => $v) {
+        foreach ($request->get as $k => $v) {
             $_GET[strtoupper($k)] = $v;
         }
     }
 
     if (isset($request->post)) {
-        foreach ($response->post as $k => $v) {
+        foreach ($request->post as $k => $v) {
             $_POST[strtoupper($k)] = $v;
         }
     }
