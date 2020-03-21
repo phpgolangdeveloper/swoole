@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" afterDir="false" />
-    </list>
+    <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
+            <state relative-caret-position="354">
               <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
             </state>
           </provider>
@@ -260,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96938000" />
+    <option name="totallyTimeSpent" value="97400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -604,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="354">
           <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
