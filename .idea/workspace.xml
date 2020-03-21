@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d13cec6-8815-4a70-b71f-27772d2ebbd4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/swoole.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/swoole.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/App.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,40 +14,52 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/swoole_twj_live/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="259">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/App.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="583" column="48" selection-start-line="583" selection-start-column="48" selection-end-line="583" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/index.php">
+        <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="249">
+              <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/base.php">
+        <entry file="file://$PROJECT_DIR$/swoole_twj_live/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="192">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -52,12 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wsServer</find>
-      <find>onmessage</find>
-      <find>open</find>
-      <find>onopen</find>
-      <find>$ws</find>
-      <find>你好</find>
       <find>c=&quot;main.talk&quot;&gt;&lt;/scr</find>
       <find>rightmenu</find>
       <find>end('你好啊，我叫</find>
@@ -82,6 +92,12 @@
       <find>$server</find>
       <find>co</find>
       <find>HTTPserver</find>
+      <find>~5.1.0@de</find>
+      <find>start.php</find>
+      <find>Container::get('app'</find>
+      <find>route</find>
+      <find>routeCh</find>
+      <find>path(</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -116,23 +132,37 @@
         <option value="$PROJECT_DIR$/swoole_twj_live/Server/http_server.php" />
         <option value="$PROJECT_DIR$/swoole_twj_live/public/static/.gitignore" />
         <option value="$PROJECT_DIR$/swoole_twj_live/public/static/live/detail.html" />
-        <option value="$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html" />
         <option value="$PROJECT_DIR$/swoole_twj_live/thinkphp/base.php" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/public/static/live/.gitignore" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/public/static/live/detaile.html" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/public/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/Request.php" />
         <option value="$PROJECT_DIR$/swoole_twj_live/server/http_server.php" />
+        <option value="$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/App.php" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/swoole_twj_live/vendor/composer" />
+      <path value="$PROJECT_DIR$/swoole_twj_live/vendor/topthink/think-installer" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="877" />
-    <option name="y" value="60" />
-    <option name="width" value="1240" />
-    <option name="height" value="1039" />
+    <option name="x" value="601" />
+    <option name="y" value="62" />
+    <option name="width" value="1492" />
+    <option name="height" value="899" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,49 +173,38 @@
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swoole" type="462c0819:PsiDirectoryNode" />
               <item name="swoole_twj_live" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
               <item name="swoole_twj_live" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
               <item name="swoole_twj_live" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="swoole" type="462c0819:PsiDirectoryNode" />
               <item name="swoole_twj_live" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="live" type="462c0819:PsiDirectoryNode" />
+              <item name="thinkphp" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="think" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../swoole_twj_live" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -193,6 +212,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy\phpstudy_pro\WWW\swoole" />
       <recent name="D:\phpstudy\phpstudy_pro\WWW\swoole\swoole_twj_live\Server" />
       <recent name="D:\phpstudy\phpstudy_pro\WWW\swoole\server" />
     </key>
@@ -226,18 +246,20 @@
       <workItem from="1584467715548" duration="66000" />
       <workItem from="1584503682411" duration="2643000" />
       <workItem from="1584621106218" duration="110000" />
-      <workItem from="1584621422898" duration="4367000" />
+      <workItem from="1584621422898" duration="13069000" />
+      <workItem from="1584674626812" duration="1240000" />
+      <workItem from="1584797077569" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82070000" />
+    <option name="totallyTimeSpent" value="93438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="702" y="48" width="992" height="831" extended-state="0" />
+    <frame x="481" y="50" width="1193" height="719" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18629551" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19559471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,13 +330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -429,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/http_server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/coroutine/redis.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -467,31 +475,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html">
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/Error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="224">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/index.php">
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/static/live/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/server/http_server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/static/live/detaile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/static/live/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/build.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9325" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="381" column="9" selection-start-line="381" selection-start-column="9" selection-end-line="381" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5400">
+          <folding>
+            <element signature="e#2849#2855#0" expanded="true" />
+            <element signature="e#2864#2870#0" expanded="true" />
+            <element signature="e#2870#2874#0" expanded="true" />
+            <element signature="e#2874#2878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_twj_live/server/http_server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="259">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_twj_live/thinkphp/library/think/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="583" column="48" selection-start-line="583" selection-start-column="48" selection-end-line="583" selection-end-column="48" />
         </state>
       </provider>
     </entry>

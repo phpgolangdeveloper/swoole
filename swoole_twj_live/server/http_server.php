@@ -20,7 +20,8 @@ $http->on('WorkerStart', function (swoole_server $server, $worker_id) {
 
 // 上面$htt->set()，如果它有静态资源，就不会再走后面的逻辑了
 $http->on('request', function ($request, $response) use ($http) {
-    header('Content-Type: text/html; charset=utf-8'); //网页编码
+//    header('Content-Type: text/html; charset=utf-8'); //网页编码
+    $_SERVER = [];
     if (isset($request->server)) {
         foreach ($request->server as $k => $v) {
             $_SERVER[strtoupper($k)] = $v;
@@ -31,13 +32,13 @@ $http->on('request', function ($request, $response) use ($http) {
             $_SERVER[strtoupper($k)] = $v;
         }
     }
-
+    $_GET = [];
     if (isset($request->get)) {
         foreach ($request->get as $k => $v) {
             $_GET[strtoupper($k)] = $v;
         }
     }
-
+    $_POST = [];
     if (isset($request->post)) {
         foreach ($request->post as $k => $v) {
             $_POST[strtoupper($k)] = $v;
@@ -46,14 +47,14 @@ $http->on('request', function ($request, $response) use ($http) {
     ob_start();
     try {
         \think\Container::get('app', [APP_PATH])
-            ->run()->send();
+            ->run()
+            ->send();
     } catch (\Exception $e) {
 
     }
     $res = ob_get_contents();
     ob_end_clean();
     $response->end($res);
-
     $http->close();
 
 });
