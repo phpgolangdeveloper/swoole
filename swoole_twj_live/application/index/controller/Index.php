@@ -6,7 +6,6 @@ class Index
     public function index()
     {
         echo 'i按时到东萨和的撒大骚动';
-        return 123;
     }
 
     public function hello($name = 'ThinkPHP5')
