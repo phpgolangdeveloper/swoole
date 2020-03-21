@@ -50,7 +50,7 @@ $http->on('request', function ($request, $response) use ($http) {
             ->run()
             ->send();
     } catch (\Exception $e) {
-
+        echo $e->getMessage();
     }
 //    $res = 'action-' . request()->action() . PHP_EOL;
     $res = ob_get_contents();
