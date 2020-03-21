@@ -44,7 +44,7 @@ $http->on('request', function ($request, $response) use ($http) {
             $_POST[strtoupper($k)] = $v;
         }
     }
-//    ob_start();
+    ob_start();
     try {
         \think\Container::get('app', [APP_PATH])
             ->run()
@@ -53,8 +53,8 @@ $http->on('request', function ($request, $response) use ($http) {
 
     }
     $res = 'action-' . request()->action() . PHP_EOL;
-//    $res = ob_get_contents();
-//    ob_end_clean();
+    $res = ob_get_contents();
+    ob_end_clean();
     $response->end($res);
     $http->close();
 
