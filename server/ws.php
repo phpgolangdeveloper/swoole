@@ -71,7 +71,8 @@ class Ws
     public function onTask($serv, $taskId, $workerId, $data)
     {
         print_r($data);
-        print_r('上面是onTask');
+        var_dump('on task finish');
+
 //        sleep(10);
         return 'on task finish';// 返回内容告诉worker进程
     }
