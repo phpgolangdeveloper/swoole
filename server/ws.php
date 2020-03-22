@@ -52,12 +52,12 @@ class Ws
             'fd' => $frame->fd,
 
         ];
-//        $ws->task($data);// 投递异步耗时任务
+        $ws->task($data);// 投递异步耗时任务
 
-        swoole_timer_after(5000, function() use($ws, $frame) {
-            echo "5s-after\n";
-            $ws->push($frame->fd, 'server-time-after:' . date('Y-M-D H:i:s') . "\n");
-        });
+//        swoole_timer_after(5000, function() use($ws, $frame) {
+//            echo "5s-after\n";
+//            $ws->push($frame->fd, 'server-time-after:' . date('Y-M-D H:i:s') . "\n");
+//        });
 
         $ws->push($frame->fd, 'server-push:' . date('Y-M-D H:i:s') . "\n");
     }
